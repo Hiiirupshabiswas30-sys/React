@@ -1,0 +1,31 @@
+*{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+           
+            html ,
+             body{
+                height: 100%;
+                width: 100%;
+            }
+            .nav{
+             background-color:rgb(178, 129, 65);
+             height: 50px;
+             width: 100%
+
+            }
+            .section{
+              background-color:bisque;
+              height: 90vh;
+              width: 100%;
+              padding: 100px;
+            }
+            
+            .center{
+              background-color: burlywood;
+              height: 100%;
+              margin: 0  auto;
+              width: 70%;
+              text-align: center;
+            }

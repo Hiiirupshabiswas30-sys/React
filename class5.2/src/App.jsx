@@ -1,0 +1,36 @@
+import React from 'react'
+import { useState } from 'react'
+import Men from './components/men.jsx'
+import Women from './components/Women.jsx'
+import Washroom from './components/Washroom.jsx'
+
+const App = () => {
+
+  const [gender, setGender] = useState('Male')
+
+  function changeGender(){
+    if(gender=='Male'){
+       setGender('Female') 
+  }else if(gender=='Female'){
+    setGender('Other')
+
+  }
+ else{
+    setGender('Male')
+  }
+}
+
+  return (
+    <div className='parent'>
+<h1>Your gender is ~ {gender}</h1>
+<button onClick={changeGender}>Change Gender</button>
+{gender=='Male'?<Men />:<Women />}
+
+<Washroom user={gender}/>
+
+    </div>
+
+  )
+}
+
+export default App

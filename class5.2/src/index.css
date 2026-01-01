@@ -1,0 +1,82 @@
+*{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+           
+            html ,
+             body{
+                height: 100%;
+                width: 100%;
+            }
+            .box{
+              height: 200px;
+              width: 200px;
+              background-color:teal;
+              margin: 10px;
+              font-size: 100px;
+            }
+            button{
+              color:azure;
+              background-color: rgb(53, 141, 111);
+              padding: 10px 20px;
+              border-radius: 5px;
+              margin-top: 10px;
+              font-weight: 600;
+            }
+            button:active{
+              scale: 0.95;
+            }
+            .parent{
+              padding: 20px;
+              height: 100vh;
+            }
+            .women{
+              border-radius: 10px;
+              margin-top: 20px;
+              width:fit-content;
+              padding: 20px 40px;
+              font-size: 30px;
+              font-weight: 600;
+              background-color: rgb(247, 167, 180);
+              color: aliceblue;
+
+            }
+            .men{
+              border-radius: 10px;
+              margin-top: 20px;
+              width:fit-content;
+              padding: 20px 40px;
+              font-size: 30px;
+              font-weight: 600;
+              background-color:rgb(104, 104, 241);
+              color:aliceblue;
+
+            }
+            .wash{ border-radius: 10px;
+              margin-top: 20px;
+              width:fit-content;
+              height: 500px;
+              width: 500px;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+              font-size: 30px;
+              font-weight: 600;
+           
+              background-color:rgb(104, 104, 241);
+              color:aliceblue;
+
+
+            }
+            .Male{
+              background-color: pink;
+            }
+            .Female{
+              background-color: rgb(161, 161, 243);
+            }
+            .Other{
+              background:conic-gradient(violet,indigo,blue,green,yellow,orange,red,violet);
+              
+            }
