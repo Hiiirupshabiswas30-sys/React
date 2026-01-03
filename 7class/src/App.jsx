@@ -88,13 +88,13 @@ const deleteHandler = (idx)=>{
       <div className='flex gap-4 flex-wrap px-10 py-10'>
            {allUsers.map(function(elem,idx){
             return<div key={idx} className='lg:w-[23vw] md:w-[30vw] sm:w-[45vw] px-8 py-8 flex-col flex items-center  bg-white text-black rounded-xl'>
-          <img className='h-24 w-24 rounded-full' src="https://i.pinimg.com/736x/e1/17/86/e117866766653f707d0cb425beb8d268.jpg" alt="" />
+          <img className='h-24 w-24 rounded-full' src={elem.imageURL}alt="" />
           <h1 className='text-2xl mt-2 font-bold'>{elem.userName}</h1>
           <h5 className=' text-blue-600 text-lg font-semibold my-2'>{elem.userRole}</h5>
           <p className='text-sm font-medium leading-tight'>{elem.userDesc}</p>
           <button onClick={()=>{
             deleteHandler(idx)
-          }} className='px-2 py-1 rounded bg-red-700 text-white font-semibold mt-8 items-center cursor-pointer active:scale-95'>{elem.imageURL}</button>
+          }} className='px-2 py-1 rounded bg-red-700 text-white font-semibold mt-8 items-center cursor-pointer active:scale-95'>Remove</button>
        </div>
            })}
         </div>
